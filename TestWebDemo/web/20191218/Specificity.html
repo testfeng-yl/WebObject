@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优先级</title>
+    <style>
+        /*元素选择器0,0,0,1*/
+        div {
+            color: black;
+        }
+        /*class选择器 0,0,1,0*/
+        .special{
+            color: pink;
+        }
+        /*id选择器 0,1,0,0*/
+        #priority{
+            color: purple;
+            color:maroon;
+        }
+        /*无穷大但不是选择器 一旦出现优先执行*/
+        div{
+            color: orange!important; /*important就是重要的*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="special" style="color: skyblue" id="priority">
+        选择器的特殊性和优先级
+    </div>
+</body>
+</html>

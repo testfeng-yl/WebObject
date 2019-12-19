@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>字间隔和字母间隔</title>
+    <style>
+        .spread {
+            word-spacing: 0.5em;
+        }
+        div {
+            word-spacing: 2em;
+        }
+        strong {
+            letter-spacing: 2em;/*letter-spacing修改的是字符与字母之间的间隔*/
+        }
+        h1  {
+            color: rgba(255,0,0,0.2);/*a表示的是半透明它的取值范围是0~1之间*/
+        }
+        h2  {
+            font-size: 100px;
+            text-shadow:green 5px 0.1em ;
+        }
+        h3  {
+            font-size: 50px;
+            text-shadow: 8px 3px 4px rgba(0,0,0,0.5);/*水平 垂直 模糊程度  颜色*/
+        }
+    </style>
+</head>
+<body>
+    <h1>文字的颜色可以设置成半透明的</h1>
+    <p class="spread">The spaces between words in<strong>this paragraph</strong>  will be increased by  0.5em</p>
+    <div>字间隔是否可以用<strong>在汉字之间</strong>?不可以的</div>
+    <h2>文本阴影</h2><!--文本向右偏移5像素向下偏移0.5em的绿色阴影,而且不模糊-->
+    <h3>我是火影</h3><!---->
+    
+
+</body>
+</html>

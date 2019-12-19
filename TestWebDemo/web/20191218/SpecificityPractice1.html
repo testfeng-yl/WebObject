@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #father #son{ /*0,2,0,0*/
+            color: blue;
+        }
+        #father p.c2{ /*0,1,1,0*/
+            color: black;
+        }
+        div.c1 p.c2{/*0,1,1,1*/
+            color: red;
+        }
+        #father{
+            color: green !important; /*继承的权重为0*/
+        }
+
+    </style>
+</head>
+<body>
+    <div id="father" class="c1">
+        <p id="son" class="c2"> 问这行字体什么颜色</p><!--最终应该是蓝色-->
+        <p>绿色的</p><!--这个答案是错误的,继承的权重为0-->
+
+
+    </div>
+</body>
+</html>
