@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒泡排序练习</title>
+    <script>
+       function rank(element){
+           for(var i = 0;i<element.length-1;i++) {
+               console.log("i="+element[i])
+               for(var j = 0;j<element.length-i-1;j++){
+                   console.log("j="+element[j]);
+                   console.log("j+1="+element[j+1]);
+                   if(element[j]>element[j+1]){
+
+                       var temp = element[j];
+                       element[j] = element[j+1];
+                       element[j+1] = temp;
+                   }
+               }
+               console.log(element);
+           }
+       }
+       var element = [3,5,1,2,7,8,4,5,3,4];
+
+      rank (element);
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

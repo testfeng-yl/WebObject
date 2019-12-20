@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象之字面界</title>
+    <script>
+        /*创建dog对象
+        * 属性:name type age color
+        * 方法 park eat
+        * */
+        var dog={
+            name:'旺仔',
+            type:'中华田园犬',
+            age:5,
+            color:'yellow',//值应该使用单引号括起来
+            //方法中如何使用属性的值
+            park:function () {
+                console.log(this.name+"汪汪汪");
+            },
+            eat:function () {
+                console.log(this.name+"啃骨头")
+
+            }
+        }
+        //访问属性和方法
+        console.log(dog.age);
+        console.log(dog.type);
+        dog.park(dog.name );
+        dog.eat(dog.name);
+        //属性的另一种访问方式
+        console.log(dog['name']);//总括号中需要加单引号
+        console.log(dog['type']);
+
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

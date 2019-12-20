@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排序练习</title>
+    <script>
+
+        function rank(arr) {
+            for (var i=0;i<arr.length-1;i++){
+                console.log("i="+arr[i]);
+                for(var j=0;j<arr.length-i-1;j++){
+                    console.log("j="+arr[j]);
+                    console.log("j+1="+arr[j+1]);
+                    if(arr.length[j]>arr[j+1]){
+                        var   swap=arr[j];
+                        arr[j]=arr[j+1];
+                        arr[j+1]=swap;
+                    }
+
+                }
+                     console.log(arr);
+            }
+
+        }
+        var arr=[5,8,2,3,4];
+        rank(arr);
+      /* function sort(element){
+           for(var i = 0;i<element.length-1;i++) {
+               console.log("i="+element[i])
+               for(var j = 0;j<element.length-i-1;j++){
+                   console.log("j="+element[j]);
+                   console.log("j+1="+element[j+1]);
+                   if(element[j]>element[j+1]){
+                       //把大的数字放到后面
+                       var swap = element[j];
+                       element[j] = element[j+1];
+                       element[j+1] = swap;
+                   }
+               }
+               console.log(element);
+           }
+       }
+       var element = [3,5,1,2,7,8,4,5,3,4];
+
+       sort(element);*/
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
