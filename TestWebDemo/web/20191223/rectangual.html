@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>矩形的例子</title>
+</head>
+<body>
+    <canvas id="rect" width="300" height="150"></canvas>
+    <script>
+        var canvas=document.getElementById("rect");
+        var ctx=canvas.getContext("2d");
+        ctx.fillRect(25,25,100,100);//绘制一个填充矩形
+        ctx.clearRect(45,45,60,60);//清除指定区域,让清除部分完全透明
+        ctx.strokeRect(50,50,50,50);//绘制一个矩形边框
+    </script>
+</body>
+</html>
