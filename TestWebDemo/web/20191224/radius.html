@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>圆角</title>
+    <style>
+    #radius1{
+        border-radius: 15px 20px 50px 12px;/*左上角开始,顺时针转*/
+        background: green;
+        padding: 20px;
+        width: 200px;
+        height: 200px;
+    }
+        #radius2{
+            border-radius:25px 50px;/*第一个值左上角与右下角,第二个值为右上角与左下角*/
+            border: 2px solid #8AC008;
+            padding:20px;
+            width:200px;
+            height:200px;
+        }
+        #radius3{
+            border-radius: 25px 10px 30px;/*左上角  右下角和左下角 右上角*/
+            background: url(img/pic.jpg);
+            background-position: top left;
+            background-repeat: repeat;/*背景图像在水平和垂直方向上重复*/
+        }
+    </style>
+</head>
+<body>
+    <p>有背景颜色元素的圆角:</p>
+    <p id="radius1">圆角</p>
+    <p>指定边框颜色的圆角:</p>
+    <p id="radius2">圆角</p>
+    <p>指定背景图片的圆角:</p>
+    <p id="radius3">圆角</p>
+
+</body>
+</html>

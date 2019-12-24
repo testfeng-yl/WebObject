@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>照片墙</title>
+<style>
+    ul {
+        height: 400px;
+        background-color: cornflowerblue;
+        text-align: center;
+        border: 1px solid #000000;
+    }
+    ul li{
+        height: 200px;
+        width: 150px;
+        display: inline-block;
+
+    }
+    ul li:nth-child(1){
+        transform: rotate(30deg);
+    }
+    ul li:nth-child(2){
+        transform: rotate(15deg);
+    }
+    ul li:nth-child(3){
+        transform: rotate(20deg);
+    }
+    ul li:nth-child(4){
+        transform: rotate(10deg);
+    }
+    ul li:nth-child(5){
+        transform: rotate(5deg);
+    }
+    ul li:hover{
+        transform: scale(1.6);
+    }
+</style>
+</head>
+<body>
+<ul>
+    <h1>网页布局实现自适应</h1>
+    <li><img src="img/dog.jpg" width="150px"></li>
+    <li><img src="img/monker.jpg" alt="" width="150px"></li>
+    <li><img src="img/panda.jpg" alt="" width="150px"></li>
+    <li><img src="img/tiger.jpg" alt="" width="150px"></li>
+    <li><img src="img/tuzi.jpg" alt="" width="150px"></li>
+</ul>
+</body>
+</html>

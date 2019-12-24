@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线性渐变</title>
+    <style>
+        #grad {
+            height: 100px;
+           background: linear-gradient(red,blue);
+        }
+        #grad1{
+            height: 100px;
+            background: -webkit-repeating-linear-gradient(red ,yellow 10%,green 20%);
+        }
+        #grad2{
+            height: 100px;
+            background: linear-gradient(to right,black,blue);/*为什么加了to才能显示*/
+        }
+        #grad3{
+            height: 100px;
+            background: linear-gradient(to left top,red,blue);
+        }
+        #grad4{
+            height: 100px;
+            background: linear-gradient(to left,rgba(255,0,0,0),rgba(255,0,0,1));
+        }
+        #grad5{
+            background:radial-gradient(red 5%,green 15%,blue 60%);
+        }
+    </style>
+</head>
+<body>
+    <P>线性渐变的方式:向下/向右/向左/对角</P>
+    <div id="grad"></div>
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+        <p>线性渐变透明度</p>
+    <div id="grad4"></div>
+    <div id="grad5"></div>
+
+</body>
+</html>

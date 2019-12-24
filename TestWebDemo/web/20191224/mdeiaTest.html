@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体规则</title>
+    <style>
+        @media screen {
+            p.test {font-family: Verdana,sans-serif;font-size: 14px}
+        }
+
+        @media print {
+            p.test{font-family: times,Serif;font-size:10px}
+        }
+        @media print,screen{
+            p.test{font-weight: bold}
+        }
+    </style>
+</head>
+<body>
+    <p class="test">媒体类型允许你指定文件如何在不同媒体呈现.该文件可以已不同的方式类型显示在屏幕上,纸张上,或者听觉浏览器</p>
+</body>
+</html>

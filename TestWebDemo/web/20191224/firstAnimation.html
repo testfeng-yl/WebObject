@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画练习</title>
+    <style>
+        div {
+            width:100px;
+            height: 200px;
+            background-color: #c3c3c3;
+            animation-name: myfirst;
+            position: relative;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-delay:2s;
+            animation-iteration-count: 1;
+            -moz-animation-direction: normal;
+            animation-play-state: running;
+
+        }
+        @keyframes myfirst {
+            0%   {background:red; left:0px; top:0px;}
+            25%  {background:yellow; left:200px; top:0px;}
+            50%  {background:blue; left:200px; top:200px;}
+            75%  {background:green; left:0px; top:200px;}
+            100% {background:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

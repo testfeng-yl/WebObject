@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" media="(max-width: 800px)" href="example.css" />
+    <style>
+        /*最大宽度为600px*/
+        @media (max-width: 600px) {
+            .facet_sidebar {
+                display: none;
+            }
+        }
+        /*宽度在500-800之间*/
+        @media screen and (min-width: 500px) and (max-width: 800px) {
+            .facet_sidebar {
+                display: block;;
+            }
+        }
+    div{
+        width: 1000px;
+        height: 500px;
+        background-color: pink;
+        border: 1px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>重置浏览器查看效果</h1>
+    </div>
+</body>
+</html>

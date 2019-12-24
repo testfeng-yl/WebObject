@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2d转换</title>
+    <style>
+        div{
+            width:100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+        #trans1{
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            transform: rotate(30deg);/*顺时针方向旋转30度*/
+            transform: skew(30deg,20deg);/*倾斜的度数*/
+        }
+        #trans2{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            transform: translate(500px,100px);/*从左边元素移动50个像素,从顶部移动100个像素*/
+
+        }
+        div#trans3{
+            margin: 100px;
+            transform: scale(2,4);
+
+        }
+    </style>
+</head>
+<body>
+    <p>移动,转化,比例化,反过来,旋转和拉伸元素</p>
+    <div>这是一个div</div>
+<div id="trans1"></div>
+<div id="trans2"></div>
+<div id="trans3"></div>
+</body>
+</html>
