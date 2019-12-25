@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function gcd(a,b) {
+        var t;
+        if(a<b) t=b,b=a,a=t;
+        while (b!=0) t=b,b=a%b,a=t;
+        return a;
+    }
+    var g=gcd(5,6);
+    console.log(g)
+</script>
+</body>
+</html>

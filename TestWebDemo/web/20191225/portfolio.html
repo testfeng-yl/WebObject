@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="getvalue(12)">点我</button>
+<script>
+    function getvalue(portfolio) {
+        var total=0.0;
+        for(stock in portfolio){
+            var shares=portfolio[stock];
+            var price=getquoto(stock);
+            total+=shares*price;
+        }
+        return total;
+    }
+   alert(total);
+</script>
+</body>
+</html>

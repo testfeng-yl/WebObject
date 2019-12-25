@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>嵌套函数案例</title>
+</head>
+<body>
+<script>
+    function hypotenuse(a,b) {
+        function square(x) {
+            return x*x;
+        }
+        square(2);
+        return Math.sqrt(square(a)+square(b));
+    }
+    var a= hypotenuse(2,4);
+    console.log(a);
+</script>
+</body>
+</html>
