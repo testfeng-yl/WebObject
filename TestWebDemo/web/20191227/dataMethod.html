@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据方法</title>
+</head>
+<body>
+<div id="app" v->
+    {{a}}
+</div>
+<script src="vue.js"></script>
+<script>
+    var data={a:1}
+    var vm=new Vue({
+        el:'#app',
+        data:data
+    })
+
+
+    vm.$watch('a',function (newVal,oldVal) {
+        console.log(newVal,oldVal);
+    })
+    vm.$data.a="test...."
+</script>
+</body>
+</html>
